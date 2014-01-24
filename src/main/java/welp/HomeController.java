@@ -10,11 +10,4 @@ public class HomeController {
     public String home() {
         return "home";
     }
-
-//@RequestMapping("/")
-//    public String eating(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
-//        model.addAttribute("name", name);
-//        return "";
-//    }
-
 }
