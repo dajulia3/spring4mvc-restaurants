@@ -1,4 +1,4 @@
-package welp;
+package welp.users;
 
 import javax.persistence.*;
 

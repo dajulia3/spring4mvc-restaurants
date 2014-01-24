@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!--xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"-->
+<!--layout:decorator="layout">-->
+<!--<head>-->
+<!--<title>Admin &middot; Blog</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div layout:fragment="header-container"></div>-->
+<!--<div layout:fragment="content" class="container">-->
+
+<!--</div>-->
+
+<div>
+    <table>
+        <thead>
+        <th>Name</th>
+        <th>Address</th>
+        </thead>
+        <tbody>
+        <tr th:each="restaurant : ${restaurants}">
+            <td th:text="${restaurant.name}"/>
+            <td th:text="${restaurant.address}"/>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</html>

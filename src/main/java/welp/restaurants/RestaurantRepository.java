@@ -1,4 +1,4 @@
-package welp;
+package welp.restaurants;
 
 import org.springframework.data.repository.CrudRepository;
 
