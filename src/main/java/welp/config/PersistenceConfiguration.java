@@ -17,7 +17,7 @@ import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.
 
 @Configuration
 @EnableJpaRepositories
-public class PersistenceConfig {
+public class PersistenceConfiguration {
 
     @Bean
     public DataSource dataSource() {
