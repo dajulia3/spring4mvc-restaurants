@@ -1,3 +1,30 @@
 spring:
   application:
     name: Welp
+
+
+---
+
+spring:
+  profiles: development,test,staging,production
+security:
+  require_ssl: true
+
+---
+
+spring:
+  profiles: development
+cache:
+  timetolive: 0
+port: 8080
+---
+
+spring:
+  profiles: test
+  port: 9000
+---
+
+spring:
+  profiles: acceptance
+  database:
+    url: jdbc:h2:mem:acceptancetestdb;MODE=PostgreSQL
