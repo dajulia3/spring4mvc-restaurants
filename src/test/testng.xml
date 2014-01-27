@@ -1,0 +1,8 @@
+<suite name="Welp" verbose="1">
+    <test name="features">
+        <packages>
+            <package name="features.*"/>
+            <package name="features"/>
+        </packages>
+    </test>
+</suite>

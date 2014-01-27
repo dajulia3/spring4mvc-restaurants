@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
 
+@Test
 public class SimpleTest {
 
     @BeforeClass

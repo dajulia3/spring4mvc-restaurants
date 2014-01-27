@@ -88,6 +88,13 @@
             <scope>test</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
+        </dependency>
+
     </dependencies>
 
     <!-- Package as an executable JAR -->
@@ -96,6 +103,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>welp.Application.java</mainClass>
+                </configuration>
             </plugin>
 
             <plugin>
