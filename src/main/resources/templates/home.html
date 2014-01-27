@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
-<html
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorator="layout">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title> Welp | Home Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-    <section layout:fragment="content" class="container">
+    <section layout:fragment="content">
         <h1>Welp HIIIIIasdfasdf</h1>
         <p>Welcome to Welp</p>
         <a th:href="${beans.pathHelper.newRestaurant()}">New Restaurant</a>
