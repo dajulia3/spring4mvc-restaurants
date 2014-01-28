@@ -12,7 +12,7 @@ public class RestaurantsWorkflowTests extends IntegrationBase {
     public void title_of_bing_should_contain_search_query_name() {
         System.out.println("yay");
 
-        goTo("http://localhost:9000/");
+        goTo("http://localhost:8080/");
 //        goToPath("/");
         assertThat(title()).contains("Welp | Home Page");
     }
